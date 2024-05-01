@@ -1,0 +1,15 @@
+<div *ngIf="recipe" class="recipe-details">
+    <div class="recipe-info">
+        <h2>{{ recipe.title }}</h2>
+        <div [innerHTML]="recipe.summary"></div> <!-- Use innerHTML binding -->
+        <p><strong>Cuisines:</strong> {{ recipe.cuisines.join(', ') }}</p>
+        <p><strong>Diets:</strong> {{ recipe.diets.join(', ') }}</p>
+        <p><strong>Dish Type:</strong> {{ recipe.dishTypes.join(', ') }}</p>
+        <p><strong>Cheap:</strong> {{ recipe.cheap ? 'Yes' : 'No' }}</p>
+        <p *ngIf="recipe.sourceUrl"><strong>Source:</strong> <a [href]="recipe.sourceUrl" target="_blank">{{ recipe.sourceUrl }}</a></p>
+    </div>
+    <div class="recipe-image">
+        <img [src]="recipe.image" [alt]="recipe.title">
+    </div>
+</div>
+

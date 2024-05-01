@@ -1,0 +1,190 @@
+/* Resetting default margins
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .recipe-box {
+    display: flex;
+    width: calc(50% - 20px); 
+    margin: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-content {
+    flex: 1;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .recipe-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-info {
+    margin-bottom: 15px;
+  }
+  
+  .info-item {
+    margin-bottom: 5px;
+  }
+  
+  .details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .details-button:hover {
+    background-color: #45a049;
+  }
+
+  
+   */
+
+
+   .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .spacer {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+
+   .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .details-button:hover {
+    background-color: #45a049;
+  }
+   .recipe-box {
+    display: flex; /* Use flexbox for layout */
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    margin-bottom: 20px; /* Optional: Add margin between recipe cards */
+    width: calc(50% - 20px); 
+    margin: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-box .recipe-title {
+    margin-top: 0; /* Remove default margin from h3 */
+  }
+  
+  .left-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .right-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .recipe-info {
+    margin-bottom: 10px; /* Optional: Add margin between recipe info items */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  
+  .like-button:hover {
+    background-color: blue;
+  }
+  .like-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent !important; /* Set background color to transparent */
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+  }
+  
+  .like-button button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent !important; /* Set background color to transparent */
+    border: none;
+    outline: none;
+  }
+  
+  .like-button-white .mat-icon {
+    color: white;
+  }
+  
+  .like-button-red .mat-icon {
+    color: red;
+  }
+  
+  
+
+  

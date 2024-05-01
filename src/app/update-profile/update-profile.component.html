@@ -1,0 +1,54 @@
+<form [formGroup]="updatedUserForm" (ngSubmit)="onSubmit()" class="form-container">
+    <h2 class="title" for="updatedUserForm">Please Answer the Following Questions to Create a Profile <br/> </h2>
+    <div>
+      <label for="first_name">Enter your First Name</label>
+      <input type="text" id="first_name" formControlName="first_name" required>
+    </div>
+    <div>
+      <label for="last_name">Enter your Last Name</label>
+      <input type="text" id="last_name" formControlName="last_name" required>
+    </div>
+    <div>
+      <label for="username">Please Create a Username</label>
+      <input type="text" id="username" formControlName="username" required>
+    </div>
+    <div>
+      <label for="password">Please Create a Password</label>
+      <input type="password" id="password" formControlName="password" required>
+    </div>
+    <div>
+      <label for="vegan_experience">How much experience do you have eating plant based foods?</label>
+      <select id="vegan_experience" formControlName="vegan_experience">
+        <option *ngFor="let option of veganExperienceOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="cooking_frequency">How frequently do you cook for yourself or others?</label>
+      <select id="cooking_frequency" formControlName="cooking_frequency">
+        <option *ngFor="let option of cookingFrequencyOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="meal_types">Which meal do you generally cook most often/enjoy cooking the most?</label>
+      <select id="meal_types" formControlName="meal_types">
+        <option *ngFor="let option of mealTypesOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    <div>
+        <label for="experimental">Do you consider yourself experimental in the kitchen?</label>
+        <select id="experimental" formControlName="experimental">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+    <div>
+      <label for="cooking_experience">How much cooking experience do you have?</label>
+      <select id="cooking_experience" formControlName="cooking_experience">
+        <option *ngFor="let option of cookingExperienceOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    <div class="button-container">
+      <button type="submit" [disabled]="updatedUserForm.invalid">Submit</button>
+    </div>
+  </form>
+  

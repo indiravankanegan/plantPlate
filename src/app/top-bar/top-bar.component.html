@@ -1,0 +1,12 @@
+<div class="top-bar">
+  <!-- Other content of the top bar -->
+
+  <!-- Spacer to push the button to the right -->
+  <div class="spacer">
+    <button *ngIf="isLoggedIn()" (click)="backToHome()" type="submit" class="button">Log Out</button>
+
+  </div>
+
+  <!-- Update Profile button -->
+  <!-- <button *ngIf="isLoggedIn()" (click)="backToDashboard()" type="submit" class="button">Back to Recipes</button> -->
+</div>

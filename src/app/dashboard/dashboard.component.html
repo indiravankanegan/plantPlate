@@ -1,0 +1,42 @@
+<div class="top-bar" *ngIf="profile">
+  <h1>Welcome, {{ profile.first_name }}!</h1>
+  <div class="button-container">
+    <button class="button" (click)="updateProfile()">Update Profile</button>
+    <button class="button" (click)="goToLikedRecipes()">Your Liked Recipes</button>
+    <button *ngIf="isRoot()" class="button" (click)="manageUsers()">Manage Users</button>
+  </div>
+
+</div>
+<div *ngIf="recipes && recipes.length > 0">
+  <h2 class="section-title">Recipes to Try:</h2>
+  <div class="recipe-container">
+    <div class="recipe-box" *ngFor="let recipe of recipes">
+      <div class="left-content">
+        <h3 class="recipe-title">{{ recipe.title }}</h3>
+        <div class="recipe-info">
+          <p class="info-item"><strong>Cuisines:</strong> {{ recipe.cuisines.join(', ') }}</p>
+          <p class="info-item"><strong>Dish Type:</strong> {{ recipe.dishTypes.join(', ') }}</p>
+        </div>
+        <div>
+  
+          <a class="details-button" (click)="goToDetails(recipe.id)">View Details</a>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="image-container">
+          <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+        </div>
+      </div>
+      <div class="like-button-container">
+        <a *ngIf="!recipe.liked" class="like-button-white" (click)="toggleLike(recipe)">
+          <button mat-icon-button color="basic">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </a>
+        <a *ngIf="recipe.liked" class="like-button-red" (click)="toggleLike(recipe)">
+          <button mat-icon-button color="basic">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </a>
+      </div>
+    </div>

@@ -1,0 +1,19 @@
+<div class="form-wrapper">
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-container">
+    <div>
+      <label for="username">Username</label>
+      <input type="text" id="username" formControlName="username" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password" required>
+    </div>
+    <div class="button-container">
+        <button type="submit" 
+        [disabled]="loginForm.invalid">Login</button>
+        <button class="create-account-btn" (click)="goToRegistration()">Create New Account</button>
+      </div>
+  </form>
+</div>
+  

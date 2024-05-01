@@ -1,0 +1,29 @@
+<div *ngIf="profile">
+    <h2>Liked Recipes for {{ profile.first_name }}</h2>
+  </div>
+
+  <div *ngIf="recipes && recipes.length > 0">
+    <div class="recipe-container">
+      <div class="recipe-box" *ngFor="let recipe of recipes">
+        <div class="left-content">
+          <h3 class="recipe-title">{{ recipe.title }}</h3>
+          <div class="recipe-info">
+            <p class="info-item"><strong>Cuisines:</strong> {{ recipe.cuisines.join(', ') }}</p>
+            <p class="info-item"><strong>Dish Type:</strong> {{ recipe.dishTypes.join(', ') }}</p>
+          </div>
+          <a class="details-button" (click)="goToDetails(recipe.id)">View Details</a>
+          <a class="details-button" (click)="removeFromLikedList(recipe.id)">Remove from Liked List</a>
+
+
+  
+  
+          
+        </div>
+        <div class="right-content">
+          <div class="image-container">
+            <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

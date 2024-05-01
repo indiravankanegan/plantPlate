@@ -1,0 +1,99 @@
+
+   .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .spacer {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+
+   .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .details-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin: 10px; /* Add a small margin to separate the buttons */
+      flex: 1; /* Ensure both buttons take up equal space */
+      min-width: 0; /* Allow button to shrink if needed */
+      box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  .details-button:first-child {
+      margin-bottom: 10px; /* Add a slightly larger margin to the first button */
+  }
+  
+  .details-button:hover {
+    background-color: #45a049;
+  }
+   .recipe-box {
+    display: flex; /* Use flexbox for layout */
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    margin-bottom: 20px; /* Optional: Add margin between recipe cards */
+    width: calc(50% - 20px); 
+    margin: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-box .recipe-title {
+    margin-top: 0; /* Remove default margin from h3 */
+  }
+  
+  .left-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .right-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .recipe-info {
+    margin-bottom: 10px; /* Optional: Add margin between recipe info items */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .icon-container {
+    cursor: pointer;
+  }
+  
+  .mat-icon {
+    font-size: 24px; /* Adjust size as needed */
+  }
+  
+  .mat-icon.liked {
+    color: red; /* Change to desired color when liked */
+  }

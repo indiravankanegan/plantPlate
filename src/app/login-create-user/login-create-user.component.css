@@ -1,0 +1,117 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Choose a professional font */
+    background-color: #f7f7f7; /* Light background color */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    background-color: #2ecc71; /* Green header background */
+    color: #fff; /* Header text color */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font size for the main heading */
+}
+
+main {
+    padding: 20px;
+}
+
+.mission, .reasons, .cta {
+    margin-bottom: 40px; /* Space between sections */
+}
+.reasons p {
+    font-weight: bold;
+}
+
+/* Add bullet points to the list items */
+.reasons ul {
+    list-style-type: disc; /* Use disc bullet points */
+    margin-left: 20px; /* Add some left margin for indentation */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+}
+
+footer {
+    background-color: #34495e; /* Dark footer background */
+    color: #fff; /* Footer text color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff; /* Footer link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center !important;
+    min-width: 95vw;
+}
+
+/* Form container */
+.form-container {
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Submit button */
+form button[type="submit"],
+.create-account-btn {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px !important;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Submit button hover */
+form button[type="submit"]:hover,
+.create-account-btn:hover {
+    background-color: #27ae60;
+}

@@ -1,0 +1,70 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Choose a professional font */
+    background-color: #f7f7f7; /* Light background color */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    background-color: #2ecc71; /* Green header background */
+    color: #fff; /* Header text color */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font size for the main heading */
+}
+
+main {
+    padding: 20px;
+}
+
+.mission, .reasons, .cta {
+    margin-bottom: 40px; /* Space between sections */
+}
+.reasons p {
+    font-weight: bold;
+}
+
+/* Add bullet points to the list items */
+.reasons ul {
+    list-style-type: disc; /* Use disc bullet points */
+    margin-left: 20px; /* Add some left margin for indentation */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+}
+
+footer {
+    background-color: #34495e; /* Dark footer background */
+    color: #fff; /* Footer text color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff; /* Footer link color */
+    text-decoration: none; /* Remove underline */
+}
+
+button {
+    background-color: #3498db; /* Blue button background */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
