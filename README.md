@@ -29,4 +29,4 @@ A web app to encourage more plant based eating
 - It also has a DELETE and POST method based on the unique combination of user id and recipe id
 
 ## Video Demo Link:
-https://youtu.be/ltUlvOsSXUs
+https://youtu.be/ltUlvOsSXUs (if that isn't working, here is a link to download the file: https://drive.google.com/drive/folders/1sXe9sNTGUSGp05-Q4rRf2OdMiozBa-O8)
