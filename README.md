@@ -30,4 +30,3 @@ A web app to encourage more plant based eating
 
 ## Video Demo Link:
 https://youtu.be/ltUlvOsSXUs
-(hopefully link is working, if not, I added the video into the repo)
